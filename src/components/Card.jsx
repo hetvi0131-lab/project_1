@@ -33,6 +33,8 @@
 // export default Card
 
 
+
+// card-2 
 import{Save, UserPlus} from "lucide-react";
 
 const Card = (props) => {
@@ -50,18 +52,24 @@ const Card = (props) => {
         </div>
         <div className="content pt-2">
             <p className="text-gray-400 my-2"><span className="text-black font-medium ">{props?.data?.company_name}</span> {props?.data?.posted}</p>
-            <h2 className="text-2xl font-bold mt-2">{props.data.job_title}</h2>
+            <h2 className="text-2xl font-semibold mt-2">{props.data.job_title}</h2>
            
 
             <p className="text-md my-2">{props?.data?.bio}</p>
 
         </div>
         <div className="other flex items-right gap-5 ">
-            <p className="text-gray-400 bg-gray-100 inline-block rounded-xl text-center p-0.5 h-7 "><span className="text-black font-medium ">{props?.data?.job_type}</span> </p>
-            <p className="text-gray-400  bg-gray-100 inline-block rounded-xl text-center p-0.5 h-7"><span className="text-black font-medium">{props?.data?.experience_level}</span></p>
-        </div>
+            <p className="text-gray-400 bg-gray-100 inline-block rounded-xl text-center p-0.5 h-7 "><span className="text-black font-small ">{props?.data?.job_type}</span> </p>
+            <p className="text-gray-400  bg-gray-100 inline-block rounded-xl text-center p-0.5 h-7"><span className="text-black font-small">{props?.data?.experience_level}</span></p>
+        </div><br></br>
+        <br></br><div className="content pt-2">
+            <p>--------------------------------------</p>
+            <p className="text-gray-400 my-2"><span className="text-black font-medium ">{props?.data?.salary}</span><br></br> {props?.data?.location}</p>
+            </div>
+ <div className='other flex justify-between items-between'>
+            <button className=' bg-black inline-block rounded-xl text-right text-amber-50  h-auto py-1 px-2 '>{props?.data?.apply_button}</button>
+            </div>
     </div>
-    
     </>
   )
 }

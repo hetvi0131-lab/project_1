@@ -111,6 +111,7 @@
 
 
 import Card from "./components/card"
+import Card1 from "./components/Card1";
 
 
 const App = () => {
@@ -152,7 +153,7 @@ const App = () => {
     "company_logo": "https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png",
     "company_name": "Apple",
     "posted": "4 days ago",
-    "job_title": "Senior Product Designer",
+    "job_title": "Senior Product Design.",
     "job_type": "Full-time",
     "experience_level": "Senior level",
     "salary": "$130/hr",
@@ -189,7 +190,8 @@ const App = () => {
     {data.map(function(user) {
       return <Card data = {user} />;
     })}
-   </section>
+   </section>  
+    <Card1  />
     </>
   );
 };
